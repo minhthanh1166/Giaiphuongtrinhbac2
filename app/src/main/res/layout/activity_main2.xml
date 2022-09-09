@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity2"
+    android:orientation="vertical"
+    android:paddingHorizontal="30dp"
+    android:background="#8D54F3"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="40sp"
+            android:text="Kết quả giải PT"
+            android:textSize="30sp"
+            android:textColor="@color/white"
+            android:id="@+id/text1"/>
+
+        <TextView
+            android:id="@+id/ketQua"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/text1"
+            android:layout_marginTop="60sp"
+            android:gravity="center"
+            android:textSize="30sp"
+            android:textColor="@color/white"/>
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ketQua"
+            android:id="@+id/exitTwo"
+            android:text="Thoát"
+            android:layout_marginTop="60dp"
+            app:backgroundTint="#5C03FA"
+            app:cornerRadius="16dp"
+            android:paddingVertical="10dp"
+            android:layout_centerInParent="true"
+            android:textSize="20sp"
+            android:textColor="@color/white"
+            />
+    </RelativeLayout>
+</LinearLayout>

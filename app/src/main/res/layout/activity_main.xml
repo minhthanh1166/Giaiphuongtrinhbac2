@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#8D54F3"
+    android:orientation="vertical"
+    android:paddingHorizontal="30dp"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <EditText
+            android:id="@+id/a"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="60dp"
+            android:drawableBottom="@color/teal_700"
+            android:hint="Nhập số thứ nhất"
+            android:paddingHorizontal="5dp"
+            android:textColorHint="@color/white"
+            android:textSize="20sp"
+            android:textColor="@color/white"/>
+
+
+        <EditText
+            android:id="@+id/b"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/a"
+            android:layout_marginTop="30dp"
+            android:hint="Nhập số thứ hai"
+            android:paddingHorizontal="5dp"
+            android:textColorHint="@color/white"
+            android:textSize="20sp"
+            android:textColor="@color/white"/>
+
+        <EditText
+            android:id="@+id/c"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/b"
+            android:layout_marginTop="30dp"
+            android:hint="Nhập số thứ ba"
+            android:paddingHorizontal="5dp"
+            android:textColorHint="@color/white"
+            android:textSize="20sp"
+            android:textColor="@color/white"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/submit"
+            style="@style/Widget.Material3.FloatingActionButton.Secondary"
+            app:cornerRadius="16dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/c"
+            android:layout_marginTop="60dp"
+            app:backgroundTint="#5C03FA"
+            android:text="Giải phương trình"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:paddingVertical="10dp"
+            android:layout_centerInParent="true"
+            />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/exit"
+            style="@style/Widget.Material3.FloatingActionButton.Secondary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/submit"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="10dp"
+            android:text="Thoát"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            app:backgroundTint="#5C03FA"
+            app:cornerRadius="16dp"
+            android:paddingVertical="10dp"/>
+    </RelativeLayout>
+
+
+</LinearLayout>
